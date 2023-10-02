@@ -23,6 +23,5 @@ Route::prefix('upload')->namespace('App\Http\Controllers\FileProcessController')
     Route::get('video', [FileProcessController::class, 'index'])->name('index');
     Route::get('video/{id}', [FileProcessController::class, 'show'])->name('show');
     Route::post('video', [FileProcessController::class, 'store'])->name('store');
-    Route::patch('video/{id}', [FileProcessController::class, 'update'])->name('update');
     Route::delete('video/{id}', [FileProcessController::class, 'destroy'])->name('destroy');
 });

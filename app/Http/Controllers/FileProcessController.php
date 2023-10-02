@@ -58,7 +58,7 @@ class FileProcessController extends Controller
             //Storage::putFile('vidoes', $video);
             $fileUrl = Storage::url('public/'.$fileNameHash);
 
-            $videoUrl = 'http://127.0.0.1:8000'.$fileUrl;
+            $videoUrl = 'https://chrome-extension-uocs.onrender.com'.$fileUrl;
             //$downloadLink = Storage::download($fileUrl);
 
             return new JsonResponse([
